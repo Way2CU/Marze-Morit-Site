@@ -1,16 +1,16 @@
 /**
  * Main JavaScript
- * Site Name
+ * Marze Morit
  *
- * Copyright (c) 2015. by Way2CU, http://way2cu.com
- * Authors:
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Mladen Mijatov
  */
 
 // create or use existing site scope
-var Site = Site || {};
+var Site = Site || new Object();
 
 // make sure variable cache exists
-Site.variable_cache = Site.variable_cache || {};
+Site.variable_cache = Site.variable_cache || new Object();
 
 
 /**
@@ -49,8 +49,6 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	if (Site.is_mobile())
-		Site.mobile_menu = new Caracal.MobileMenu();
 };
 
 

@@ -9,6 +9,47 @@
 
 		<body>
 			<header>
+				<!-- Company logo -->
+				<img
+					class="logo"
+					src="_BASEURL.'/site/images/logo-wide.svg'"
+					alt="site_title"
+					cms:eval="src"
+					cms:constant="alt"
+					/>
+
+				<!-- Initial text and list -->
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="header"
+					/>
+
+				<!-- Call to action button -->
+				<cms:text constant="call_to_action"/>
+				<a href="tel:..." class="call-to-action">
+					<cms:text constant="phone"/>
+				</a>
+
+				<!-- Circle -->
+				<img
+					class="stamp"
+					src="_BASEURL.'/site/images/stamp.svg'"
+					alt="site_title"
+					cms:eval="src"
+					cms:constant="alt"
+					/>
+
+				<!-- Contact form -->
+				<div>
+					<h2><cms:text constant="title_contact_form"/></h2>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact"
+						/>
+					<span><cms:text constant="message_contact_form"/></span>
+				</div>
 			</header>
 		</body>
 	</html>

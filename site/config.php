@@ -17,8 +17,8 @@ define('DEBUG', 1);
 // define('SQL_DEBUG', 1);
 
 // site language configuration
-$available_languages = array('en');
-$default_language = 'en';
+$available_languages = array('he');
+$default_language = 'he';
 
 // default session options
 $session_type = Session::TYPE_BROWSER;
@@ -35,7 +35,7 @@ $db_config = array(
 
 // configure code generation
 $cache_method = CacheType::NONE;
-$optimize_code = false;
+$optimize_code = true;
 $include_styles = true;
 $url_rewrite = true;
 

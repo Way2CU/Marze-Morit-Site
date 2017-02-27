@@ -2,12 +2,31 @@
  * Main Style Sheet
  * Marze Morit
  *
- * Copyright © 2017 Mladen Mijatov. All Rights Reserved.
+ * Copyright © 2017 Way2CU. All Rights Reserved.
+ * Author: Mladen Mijatov
  */
+
+@import 'common.less';
 
 body {
 	background-color: white;
 	color: black;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+
+	color: @color_dark_blue;
+}
+
+h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+
+	color: @color_blue;
 }
 
 /**
@@ -19,4 +38,80 @@ header {
 
 	background-image: url(../images/header-background.jpg);
 	background-position: center top;
+}
+
+header img.logo {
+	width: 200px;
+	margin-bottom: 1em;
+}
+
+/**
+ * Contact form
+ */
+header > div {
+	position: absolute;
+	top: 50px;
+	left: calc(~'(100% - 1200px) / 2');
+
+	background-color: @color_background;
+	background-color: fade(@color_background, 60);
+}
+
+header > div > h2,
+header > div > span {
+	padding: 1rem;
+}
+
+header > div > form {
+	padding: 0 1rem;
+}
+
+header > div > form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+header > div > form label span {
+	display: inline-block;
+	min-width: 70px;
+}
+
+header > div > form label input {
+	padding: 1em;
+	border: 1px solid @color_off_black;
+	background-color: @color_background;
+
+	color: @color_off_black;
+
+	&:focus {
+		border-color: @color_blue;
+	}
+}
+
+header > div > form div.controls {
+	text-align: center;
+}
+
+header > div > form div.controls button {
+	padding: 1em 3em;
+
+	border: 0;
+	background-color: @color_red;
+	color: white;
+
+	transition: 0.3s all;
+
+	&:hover {
+		background-color: lighten(@color_red, 10);
+	}
+
+	&:active {
+		background-color: darken(@color_red, 10);
+	}
+}
+
+header > div > span {
+	display: block;
+	margin-top: 1em;
+	background-color: fade(@color_background, 50);
 }
