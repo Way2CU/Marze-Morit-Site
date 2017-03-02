@@ -19,22 +19,44 @@
 					/>
 
 				<!-- Initial text and list -->
+				<span class="icon-wrap">
+					<cms:svg 
+						file="svg-icons/icomoon_7_icons/symbol-defs.svg" 
+						symbol="icon-apple"
+						/>
+					<cms:svg 
+						file="svg-icons/icomoon_7_icons/symbol-defs.svg" 
+						symbol="icon-caller"
+						/>
+					<cms:svg 
+						file="svg-icons/icomoon_7_icons/symbol-defs.svg" 
+						symbol="icon-time"
+						/>
+				</span>
+
 				<cms:module
 					name="articles"
 					action="show"
 					text_id="header"
 					/>
-
+				
 				<!-- Call to action button -->
-				<cms:text constant="call_to_action"/>
+				<p class="btn-label"><cms:text constant="call_to_action" /></p>
 				<a href="tel:..." class="call-to-action">
-					<cms:text constant="phone"/>
+					
+					<p>
+						<cms:text constant="phone"/>
+					</p>
+					<cms:svg 
+						file="svg-icons/icomoon_7_icons/symbol-defs.svg" 
+						symbol="icon-phone-white"
+						/>
 				</a>
 
 				<!-- Circle -->
 				<img
 					class="stamp"
-					src="_BASEURL.'/site/images/stamp.svg'"
+					src="_BASEURL.'/site/images/svg-icons/stamp.svg'"
 					alt="site_title"
 					cms:eval="src"
 					cms:constant="alt"
@@ -42,7 +64,7 @@
 
 				<!-- Contact form -->
 				<div>
-					<h2><cms:text constant="title_contact_form"/></h2>
+					<h3><cms:text constant="title_contact_form"/></h3>
 					<cms:module
 						name="contact_form"
 						action="show"
