@@ -47,7 +47,7 @@
 					<p><cms:text constant="phone"/></p>
 
 					<cms:svg 
-						file="images/symbol-defs.svg" 
+						file="symbol-defs.svg" 
 						symbol="icon-phone-white"
 						/>
 				</a>
@@ -73,7 +73,7 @@
 				</div>
 			</header>
 
-			<!-- List of programs -->
+			<!-- List of company-programs -->
 			<cms:module 
 				name="articles"
 				action="show"

@@ -132,7 +132,7 @@ header > div > span {
 }
 
 /**
-* Article header
+* Header Article
 */
 
 header article {
@@ -206,6 +206,36 @@ header > span.icon-wrap > svg {
 	display: block;
 	margin: 15px 0px 10px 10px;
 	position: relative;
+}
+
+/*
+* Article company-programs
+*/
+
+body > article {
+	margin-top: 10px;
+	padding: 0 calc(~'(100% - 800px) / 2');
+	text-align: center;
+} 
+
+body > article > h2 {
+	color: @color_off_black;
+}
+
+body > article > ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin: 25px 0px 25px 25px;
+}
+
+body > article > ul > li {
+	display: inline-block;
+	padding: 0 2em;
+	color: @color_dark_blue;
+}
+
+body > article > ul > li:not(:last-child) {
+	border-left: 1px solid @color_dark_blue;
 }
 
 
