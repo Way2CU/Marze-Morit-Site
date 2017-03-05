@@ -18,18 +18,18 @@
 					cms:constant="alt"
 					/>
 
-				<!-- Initial text and list -->
+				<!-- Initial text and list, list bullets icons -->
 				<span class="icon-wrap">
 					<cms:svg 
-						file="svg-icons/icomoon_7_icons/symbol-defs.svg" 
+						file="symbol-defs.svg" 
 						symbol="icon-apple"
 						/>
 					<cms:svg 
-						file="svg-icons/icomoon_7_icons/symbol-defs.svg" 
+						file="symbol-defs.svg" 
 						symbol="icon-caller"
 						/>
 					<cms:svg 
-						file="svg-icons/icomoon_7_icons/symbol-defs.svg" 
+						file="symbol-defs.svg" 
 						symbol="icon-time"
 						/>
 				</span>
@@ -44,11 +44,10 @@
 				<p class="btn-label"><cms:text constant="call_to_action" /></p>
 				<a href="tel:..." class="call-to-action">
 					
-					<p>
-						<cms:text constant="phone"/>
-					</p>
+					<p><cms:text constant="phone"/></p>
+
 					<cms:svg 
-						file="svg-icons/icomoon_7_icons/symbol-defs.svg" 
+						file="images/symbol-defs.svg" 
 						symbol="icon-phone-white"
 						/>
 				</a>
@@ -73,6 +72,13 @@
 					<span><cms:text constant="message_contact_form"/></span>
 				</div>
 			</header>
+
+			<!-- List of programs -->
+			<cms:module 
+				name="articles"
+				action="show"
+				text_id="programs"
+				/>
 		</body>
 	</html>
 </document>
