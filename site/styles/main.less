@@ -118,6 +118,7 @@ header > div > form div.controls button {
 
 	&:hover {
 		background-color: lighten(@color_red, 10);
+		cursor: pointer;
 	}
 
 	&:active {
@@ -179,6 +180,7 @@ header > a.call-to-action {
 
 	&:hover {
 		background-color: lighten(@color_red, 10);
+		cursor: pointer;
 	}
 
 	&:active {
@@ -238,11 +240,99 @@ body > article > ul > li:not(:last-child) {
 	border-left: 1px solid @color_dark_blue;
 }
 
+/*
+* Offer section
+*/
 
+body > div.offer-section {
+	padding: 0 calc(~'(100% - 1200px) / 2');
+	height: 500px;
 
+	background-image: url(../images/table.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
 
+body > div.offer-section article {
+	width: 40%;
+	padding-right: 10%;
+}
 
+body > div.offer-section article > h2 {
+	color: @color_off_black;
+}
 
+body > div.offer-section article > hr {
+	background-color: @color_red;
+	height: 1px;
+	border: 0px;
+}
 
+body > div.offer-section article > ol {
+	list-style: none;
+	counter-reset: li;
+	padding-right: 0px;
+}
 
+body > div.offer-section article > ol > li {
+	counter-increment: li;
+	width: 40%;
+	display: inline-block;
+	padding: 15px 0px 15px 15px;
+}
 
+body > div.offer-section article > ol > li:before {
+	content: counter(li) ".";
+	color: @color_red;
+  	display: inline-block; 
+  	margin-left: 1em;
+}
+
+body > div.offer-section > a.call-to-action {
+	position: relative;
+	display: inline-block;
+	top: -290px;
+	right: 775px;
+	margin-right: 40px;
+	width: 240px;
+	height: 50px;
+	padding-top: 10px;
+	background-color: @color_red;
+	text-decoration: none;
+	color: @color_background;
+	text-align: center;
+	border-radius: 1em;
+
+	&:hover {
+		background-color: lighten(@color_red, 10);
+		cursor: pointer;
+	}
+
+	&:active {
+		background-color: darken(@color_red, 10);
+	}
+}
+
+body > div.offer-section > a.call-to-action > p {
+	display: inline;
+	vertical-align: bottom;
+	margin-left: 5px;
+}
+
+body > div.offer-section > a.call-to-action > svg {
+	display: inline;
+	width: 30px;
+	height: 30px;
+	text-align: left;
+	margin-top: 5px;
+}
+
+body > div.offer-section > p.btn-label {
+	position: relative;
+	display: block;
+	top: -290px;
+	right: 775px;
+	margin-top: 40px;
+	padding-right: 50px;	
+	color: @color_off_black;
+}

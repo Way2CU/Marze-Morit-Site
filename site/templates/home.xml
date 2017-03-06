@@ -79,6 +79,27 @@
 				action="show"
 				text_id="programs"
 				/>
+
+			<!-- Offer section -->
+			<div class="offer-section">
+				
+				<cms:module 
+					name="articles"
+					action="show"
+					text_id="offer"
+					/>
+				
+				<p class="btn-label"><cms:text constant="call_to_action" /></p>
+				<a href="tel:..." class="call-to-action">
+					
+					<p><cms:text constant="phone"/></p>
+
+					<cms:svg 
+						file="symbol-defs.svg" 
+						symbol="icon-phone-white"
+						/>
+				</a>
+			</div>
 		</body>
 	</html>
 </document>
