@@ -110,6 +110,26 @@
 					text_id="gallery"
 					/>
 			</div>
+			<footer>
+
+				<!-- Logo -->
+				<img
+					class="logo"
+					src="_BASEURL.'/site/images/logo-narrow.svg'"
+					alt="site_title"
+					cms:eval="src"
+					cms:constant="alt"
+					/>
+
+				<!-- Circle -->
+				<img
+					class="stamp"
+					src="_BASEURL.'/site/images/svg-icons/stamp.svg'"
+					alt="site_title"
+					cms:eval="src"
+					cms:constant="alt"
+					/>
+			</footer>
 		</body>
 	</html>
 </document>
