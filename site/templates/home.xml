@@ -130,7 +130,39 @@
 					cms:constant="alt"
 					/>
 
-				<!-- Contact form -->
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="footer"
+					/>
+				<!-- Articles list items bullets -->
+				<span class="icon-wrap">
+					<cms:svg 
+						file="symbol-defs.svg" 
+						symbol="icon-apple"
+						/>
+					<cms:svg 
+						file="symbol-defs.svg" 
+						symbol="icon-caller"
+						/>
+					<cms:svg 
+						file="symbol-defs.svg" 
+						symbol="icon-time"
+						/>
+				</span>
+
+				<!-- Call to action button footer -->
+				<p class="btn-label"><cms:text constant="call_to_action" /></p>
+				<a href="tel:..." class="call-to-action">
+					
+					<p><cms:text constant="phone"/></p>
+
+					<cms:svg 
+						file="symbol-defs.svg" 
+						symbol="icon-phone-white"
+						/>
+				</a>
+				<!-- Footer Contact form -->
 				<div>
 					<h3><cms:text constant="title_contact_form_footer"/></h3>
 					<cms:module

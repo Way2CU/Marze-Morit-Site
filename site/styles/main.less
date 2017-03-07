@@ -372,25 +372,105 @@ footer {
 
 	background-image: url(../images/footer.jpg);
 	background-position: center bottom;
+	background-repeat: no-repeat;
 }
 
 footer img.logo {
+	position: relative;
+	right: 1135px;
 	width: 150px;
-	display: block;
-	margin-right: calc(~'(100% - 250px)');
+	display: inline-block;
 }
 
 footer img.stamp {
+	position: relative;
+	top: 60px;
+	right: 440px;
 	width: 200px;
+	display: inline-block;
+}
+
+footer > article {
+	position: relative;
+	display: inline-block;
+	left: 235px;
+	top: -15px;
+}
+
+footer > article > ul {
+	color: @color_off_black;
+	padding-right: 3em;
+	padding-bottom: 1em;
+	list-style-type: none;
+	list-style-image: none;
+	line-height: 40px;
+}
+
+footer > span.icon-wrap {
+	display: inline-block;
+	position: relative;
+	left: 400px;
+	top: -2px;
+}
+
+footer > span.icon-wrap > svg {
+	width: 1.5em;
+	height: 1.5em;
 	display: block;
-	margin-top: -150px;
-	margin-right: 550px;
+	margin: 15px 0px 10px 10px;
+	position: relative;
+}
+
+footer > a.call-to-action {
+	position: relative;
+	display: inline-block;
+	width: 240px;
+	height: 50px;
+	padding-top: 10px;
+	background-color: @color_red;
+	text-decoration: none;
+	color: @color_background;
+	text-align: center;
+	border-radius: 1em;
+	left: 665px;
+	top: 110px;
+
+	&:hover {
+		background-color: lighten(@color_red, 10);
+		cursor: pointer;
+	}
+
+	&:active {
+		background-color: darken(@color_red, 10);
+	}
+}
+
+footer > a.call-to-action svg {
+	display: inline;
+	width: 30px;
+	height: 30px;
+	padding-bottom: 10px;
+}
+
+footer > a.call-to-action p {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 5px;
+}
+
+footer > p.btn-label {
+	display: inline-block;
+	position: relative;
+	left:435px;
+	top: 35px;
+	color: @color_off_black;
 }
 
 footer > div {
-	padding: 20px 0px;
+	position: relative;
+	top:138px;
+	padding: 22px 0px;
 	text-align: center;
-	margin-top: 140px;
 	background-color: fade(@color_off_black, 75);
 }
 
@@ -448,3 +528,4 @@ footer > div > form > div.controls button {
 		background-color: darken(@color_red, 10);
 	}
 }
+
