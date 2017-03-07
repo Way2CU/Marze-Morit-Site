@@ -367,8 +367,8 @@ body > div.gallery > article > hr {
 */
 
 footer {
-	padding: 0 calc(~'(100% - 1200px) / 2');
 	min-height: 600px;
+	color: @color_background;
 
 	background-image: url(../images/footer.jpg);
 	background-position: center bottom;
@@ -377,13 +377,74 @@ footer {
 footer img.logo {
 	width: 150px;
 	display: block;
-	margin-right: calc(~'(100% - 150px)');
+	margin-right: calc(~'(100% - 250px)');
 }
 
 footer img.stamp {
 	width: 200px;
 	display: block;
 	margin-top: -150px;
-	margin-right: 460px;
+	margin-right: 550px;
 }
 
+footer > div {
+	padding: 20px 0px;
+	text-align: center;
+	margin-top: 140px;
+	background-color: fade(@color_off_black, 75);
+}
+
+footer > div > form {
+	padding-right: 20px;
+}
+
+footer > div > h3 {
+	display: inline-block;
+	color: @color_background;
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
+
+footer > div > span {
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+footer > div > form > label {
+	display: inline-block;
+}
+
+footer > div > form > label > span {
+	padding-left: 5px;
+}
+
+footer > div > form > label > input {
+	height: 35px;
+	margin-left: 10px;
+	width: 240px;
+}
+
+footer > div > form > div.controls {
+	display: inline-block;
+}
+
+footer > div > form > div.controls button {
+	padding: 0.8em 3em;
+	margin-right: 10px;
+
+	border: 0;
+	background-color: @color_red;
+	color: white;
+
+	transition: 0.3s all;
+
+	&:hover {
+		background-color: lighten(@color_red, 10);
+		cursor: pointer;
+	}
+
+	&:active {
+		background-color: darken(@color_red, 10);
+	}
+}

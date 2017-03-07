@@ -129,6 +129,17 @@
 					cms:eval="src"
 					cms:constant="alt"
 					/>
+
+				<!-- Contact form -->
+				<div>
+					<h3><cms:text constant="title_contact_form_footer"/></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact"
+						/>
+					<span><cms:text constant="message_contact_form_footer"/></span>
+				</div>
 			</footer>
 		</body>
 	</html>
