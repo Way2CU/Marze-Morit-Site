@@ -100,6 +100,16 @@
 						/>
 				</a>
 			</div>
+
+			<!-- Gallery -->
+			<div class="gallery">
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="gallery"
+					/>
+			</div>
 		</body>
 	</html>
 </document>

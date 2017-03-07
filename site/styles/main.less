@@ -291,7 +291,7 @@ body > div.offer-section article > ol > li:before {
 body > div.offer-section > a.call-to-action {
 	position: relative;
 	display: inline-block;
-	top: -290px;
+	top: -230px;
 	right: 775px;
 	margin-right: 40px;
 	width: 240px;
@@ -328,11 +328,36 @@ body > div.offer-section > a.call-to-action > svg {
 }
 
 body > div.offer-section > p.btn-label {
-	position: relative;
+	position: absolute;
 	display: block;
-	top: -290px;
-	right: 775px;
+	top: 750px;
+	right: 860px;
 	margin-top: 40px;
 	padding-right: 50px;	
 	color: @color_off_black;
+}
+
+/*
+* Gallery
+*/
+
+body > div.gallery {
+	min-height: 400px;
+}
+
+body > div.gallery > article {
+	padding: 0px calc(~'(100% - 1200px)/2');
+}
+
+body > div.gallery > article > h2,
+body > div.gallery > article > h3 {
+	text-align: center;
+	color: @color_off_black;
+}
+
+body > div.gallery > article > hr {
+	background-color: @color_red;
+	height: 1px;
+	border: 0px;
+	margin-top: 30px;
 }
