@@ -100,7 +100,11 @@ header > div > form label input {
 	color: @color_off_black;
 
 	&:focus {
-		border-color: @color_blue;
+		border-color: @color_red;
+	}
+
+	&:hover {
+		border-color: @color_red;
 	}
 }
 
@@ -506,6 +510,15 @@ footer > div > form > label > input {
 	height: 35px;
 	margin-left: 10px;
 	width: 240px;
+	border: 1px solid @color_off_black;
+
+	&:focus {
+		border-color: @color_red;
+	}
+
+	&:hover {
+		border-color: @color_red;
+	}
 }
 
 footer > div > form > div.controls {
