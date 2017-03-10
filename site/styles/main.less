@@ -33,7 +33,7 @@ h2, h3, h4, h5 {
  * Header
  */
 header {
-	padding: 0 calc(~'(100% - 1200px) / 2');
+	// padding: 0 calc(~'(50% - 600px) / 2');
 	min-height: 600px;
 
 	background-image: url(../images/header-background.jpg);
@@ -44,13 +44,14 @@ header {
 header img.logo {
 	width: 200px;
 	margin-bottom: 1em;
+	padding-right: 1.5%;
 }
 
 header img.stamp {
-	width: 200px;
+	width: 180px;
 	position: absolute;
 	top: 22%;
-	right: 38%;
+	right: calc(~'(100% - 300px)/2');
 }
 
 /**
@@ -59,7 +60,8 @@ header img.stamp {
 header > div {
 	position: absolute;
 	top: 50px;
-	left: calc(~'(100% - 1200px) / 2');
+	left: calc(~'(50% - 500px)/2');
+	max-width: 380px;
 
 	background-color: @color_background;
 	background-color: fade(@color_background, 60);
@@ -73,9 +75,6 @@ header > div > span {
 
 header > div > h3 {
 	color: @color_off_black;
-	white-space: pre-line;
-	width: 350px;
-	white-space: pre;
 }
 
 header > div > form {
@@ -93,8 +92,10 @@ header > div > form label span {
 }
 
 header > div > form label input {
-	padding: 1em;
 	border: 1px solid @color_off_black;
+	box-sizing: border-box;
+	height: 35px;
+	width: 235px;
 	background-color: @color_background;
 
 	color: @color_off_black;
@@ -113,8 +114,9 @@ header > div > form div.controls {
 }
 
 header > div > form div.controls button {
-	padding: 1em 3em;
-
+	box-sizing: border-box;
+	height: 35px;
+	width: 110px;
 	border: 0;
 	background-color: @color_red;
 	color: white;
@@ -143,6 +145,7 @@ header > div > span {
 
 header article {
 	max-width: 35%;
+	padding-right: 1.5%;
 }
 
 header > article > ul {
@@ -175,7 +178,7 @@ header > a.call-to-action {
 	position: relative;
 	display: inline-block;
 	top: 20px;
-	margin-right: 40px;
+	margin-right: calc(~'(50% - 300px)/2');
 	width: 240px;
 	height: 50px;
 	padding-top: 10px;
@@ -200,7 +203,8 @@ header > p.btn-label {
 	display: block;
 	top: 20px;
 	margin-top: 40px;
-	padding-right: 50px;	
+	padding-right: calc(~'(50% - 300px)/2');	
+	font-weight: bold;
 }
 
 header > span.icon-wrap {
@@ -299,7 +303,7 @@ body > div.offer-section > a.call-to-action {
 	position: relative;
 	display: inline-block;
 	top: -230px;
-	right: 775px;
+	right: calc(~'(100% - 300px)');
 	margin-right: 40px;
 	width: 240px;
 	height: 50px;
@@ -338,7 +342,7 @@ body > div.offer-section > p.btn-label {
 	position: absolute;
 	display: block;
 	top: 750px;
-	right: 860px;
+	right: calc(~'(100% - 300px)');
 	margin-top: 40px;
 	padding-right: 50px;	
 	color: @color_off_black;
@@ -353,7 +357,7 @@ body > div.gallery {
 }
 
 body > div.gallery > article {
-	padding: 0px calc(~'(100% - 1200px)/2');
+	padding: 0px calc(~'(100% - 1200px)');
 }
 
 body > div.gallery > article > h2,
@@ -384,7 +388,7 @@ footer {
 
 footer img.logo {
 	position: relative;
-	right: 1135px;
+	right: calc(~'(100% - 150px)/2');
 	width: 150px;
 	display: inline-block;
 }
