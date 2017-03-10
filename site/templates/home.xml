@@ -19,20 +19,6 @@
 					/>
 
 				<!-- Initial text and list, list bullets icons -->
-				<span class="icon-wrap">
-					<cms:svg 
-						file="symbol-defs.svg" 
-						symbol="icon-apple"
-						/>
-					<cms:svg 
-						file="symbol-defs.svg" 
-						symbol="icon-caller"
-						/>
-					<cms:svg 
-						file="symbol-defs.svg" 
-						symbol="icon-time"
-						/>
-				</span>
 
 				<cms:module
 					name="articles"
