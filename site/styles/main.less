@@ -161,27 +161,22 @@ header > article > ul > li {
 }
 
 header > a > svg {
-	display: inline;
+	display: inline-block;
 	width: 30px;
 	height: 30px;
-	text-align: left;
-	margin-top: 5px;
+	vertical-align: middle;
 }
 
 header > a > p {
-	display: inline;
-	vertical-align: bottom;
-	margin-left: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
 }
 
 header > a.call-to-action {
-	position: relative;
 	display: inline-block;
-	top: 20px;
 	margin-right: calc(~'(50% - 300px)/2');
-	width: 240px;
-	height: 50px;
-	padding-top: 10px;
+	padding: 5px 60px;
 	background-color: @color_red;
 	text-decoration: none;
 	color: @color_background;
@@ -199,26 +194,9 @@ header > a.call-to-action {
 }
 
 header > p.btn-label {
-	position: relative;
-	display: block;
-	top: 20px;
 	margin-top: 40px;
 	padding-right: calc(~'(50% - 300px)/2');	
 	font-weight: bold;
-}
-
-header > span.icon-wrap {
-	display: block;
-	position: absolute;
-	top: 215px;
-}
-
-header > span.icon-wrap > svg {
-	width: 1.5em;
-	height: 1.5em;
-	display: block;
-	margin: 15px 0px 10px 10px;
-	position: relative;
 }
 
 /*
@@ -305,13 +283,10 @@ body > div.offer-section > a.call-to-action {
 	top: -230px;
 	right: calc(~'(100% - 300px)');
 	margin-right: 40px;
-	width: 240px;
-	height: 50px;
-	padding-top: 10px;
+	padding: 5px 60px;
 	background-color: @color_red;
 	text-decoration: none;
 	color: @color_background;
-	text-align: center;
 	border-radius: 1em;
 
 	&:hover {
@@ -325,17 +300,16 @@ body > div.offer-section > a.call-to-action {
 }
 
 body > div.offer-section > a.call-to-action > p {
-	display: inline;
-	vertical-align: bottom;
-	margin-left: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
 }
 
 body > div.offer-section > a.call-to-action > svg {
-	display: inline;
+	display: inline-block;
 	width: 30px;
 	height: 30px;
-	text-align: left;
-	margin-top: 5px;
+	vertical-align: middle;
 }
 
 body > div.offer-section > p.btn-label {
@@ -460,13 +434,10 @@ footer > span.icon-wrap > svg {
 footer > a.call-to-action {
 	position: relative;
 	display: inline-block;
-	width: 240px;
-	height: 50px;
-	padding-top: 10px;
+	padding: 5px 60px;
 	background-color: @color_red;
 	text-decoration: none;
 	color: @color_background;
-	text-align: center;
 	border-radius: 1em;
 	left: 665px;
 	top: 110px;
@@ -482,16 +453,16 @@ footer > a.call-to-action {
 }
 
 footer > a.call-to-action svg {
-	display: inline;
+	display: inline-block;
 	width: 30px;
 	height: 30px;
-	padding-bottom: 10px;
+	vertical-align: middle;
 }
 
 footer > a.call-to-action p {
 	display: inline-block;
-	vertical-align: bottom;
-	margin-left: 5px;
+	vertical-align: middle;
+	padding-left: 10px;
 }
 
 footer > p.btn-label {
