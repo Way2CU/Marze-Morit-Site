@@ -236,29 +236,31 @@ header > p.btn-label {
 * Article company-programs
 */
 
-body > article {
+body > div.programs > article {
 	margin-top: 10px;
-	padding: 0 calc(~'(100% - 800px) / 2');
+	padding: 0px calc(~'(50% - 500px) / 2');
 	text-align: center;
 } 
 
-body > article > h2 {
+body > div.programs > article > h1 {
+	margin-bottom: 40px;
 	color: @color_off_black;
 }
 
-body > article > ul {
+body > div.programs > article > ul {
+	padding: 0px 0px;
 	list-style-type: none;
 	list-style-image: none;
-	margin: 25px 0px 25px 25px;
 }
 
-body > article > ul > li {
+body > div.programs > article > ul > li {
 	display: inline-block;
 	padding: 0 2em;
+	max-width: 18%;
 	color: @color_dark_blue;
 }
 
-body > article > ul > li:not(:last-child) {
+body > div.programs > article > ul > li:not(:last-child) {
 	border-left: 1px solid @color_dark_blue;
 }
 

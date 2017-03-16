@@ -60,11 +60,13 @@
 			</header>
 
 			<!-- List of company-programs -->
-			<cms:module 
-				name="articles"
-				action="show"
-				text_id="programs"
-				/>
+			<div class="programs">
+				<cms:module 
+					name="articles"
+					action="show"
+					text_id="programs"
+					/>
+			</div>
 
 			<!-- Offer section -->
 			<div class="offer-section">
