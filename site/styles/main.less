@@ -42,9 +42,9 @@ header {
 }
 
 header img.logo {
+	padding-right: calc(~'(50% - 500px) / 2');
 	width: 200px;
 	margin-bottom: 1em;
-	padding-right: 1.5%;
 }
 
 header img.stamp {
@@ -144,20 +144,53 @@ header > div > span {
 */
 
 header article {
-	max-width: 35%;
-	padding-right: 1.5%;
+	max-width: 32%;
+	padding-right: calc(~'(50% - 500px) / 2');
 }
 
 header > article > ul {
-	padding-right: 3em;
 	padding-bottom: 1em;
+	padding-right: 0px;
+	margin-top: 2em;
 	list-style-type: none;
 	list-style-image: none;
-	margin-top: 2em;
 }
 
 header > article > ul > li {
 	padding-bottom: 1em;
+}
+
+header > article > ul > li:nth-of-type(1):before {
+	display: inline-block;
+    width: 1.5em;
+    height: 1.8em;
+    margin: 10px 3px 0 10px;
+    content: "  ";
+    background: url(../images/svg-icons/apple.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
+}
+
+header > article > ul > li:nth-of-type(2):before {
+	display: inline-block;
+    width: 1.5em;
+    height: 1.8em;
+    margin: 10px 3px 0 10px;
+    content: "  ";
+    background: url(../images/svg-icons/caller.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
+}
+
+header > article > ul > li:nth-of-type(3):before {
+	display: inline-block;
+    width: 1.5em;
+    height: 1.8em;
+    margin: 10px 3px 0 10px;
+    content: "  ";
+    background: url(../images/svg-icons/time.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
 }
 
 header > a > svg {
@@ -331,7 +364,7 @@ body > div.gallery {
 }
 
 body > div.gallery > article {
-	padding: 0px calc(~'(100% - 1200px)');
+	padding: 0px calc(~'(50% - 500px) / 2');
 }
 
 body > div.gallery > article > h2,
@@ -348,7 +381,7 @@ body > div.gallery > article > hr {
 }
 
 body > div.gallery > div.image-list {
-	padding: 0px calc(~'(100% - 1200px)');	
+	padding: 0px calc(~'(50% - 500px) / 2');	
 }
 
 body > div.gallery > div.image-list > div.list-item {
@@ -358,7 +391,7 @@ body > div.gallery > div.image-list > div.list-item {
 
 body > div.gallery > div.image-list > div.list-item > div {
 	display: inline-block;
-	width: 50%;
+	width: 65%;
 	margin-bottom: 15px;
 }
 
@@ -409,11 +442,44 @@ footer > article {
 
 footer > article > ul {
 	color: @color_off_black;
-	padding-right: 3em;
+	padding-right: 0px;
 	padding-bottom: 1em;
 	list-style-type: none;
 	list-style-image: none;
 	line-height: 40px;
+}
+
+footer > article > ul > li:nth-of-type(1):before {
+	display: inline-block;
+    width: 1.5em;
+    height: 1.8em;
+    margin: 10px 3px 0 10px;
+    content: "  ";
+    background: url(../images/svg-icons/apple.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
+}
+
+footer > article > ul > li:nth-of-type(2):before {
+	display: inline-block;
+    width: 1.5em;
+    height: 1.8em;
+    margin: 10px 3px 0 10px;
+    content: "  ";
+    background: url(../images/svg-icons/caller.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
+}
+
+footer > article > ul > li:nth-of-type(3):before {
+	display: inline-block;
+    width: 1.5em;
+    height: 1.8em;
+    margin: 10px 3px 0 10px;
+    content: "  ";
+    background: url(../images/svg-icons/time.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
 }
 
 footer > span.icon-wrap {

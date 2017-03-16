@@ -95,7 +95,7 @@
 					action="show"
 					text_id="gallery"
 					/>
-					
+
 				<div class="image-list">
 					<cms:module 
 						name="gallery"
@@ -130,21 +130,6 @@
 					action="show"
 					text_id="footer"
 					/>
-				<!-- Articles list items bullets -->
-				<span class="icon-wrap">
-					<cms:svg 
-						file="symbol-defs.svg" 
-						symbol="icon-apple"
-						/>
-					<cms:svg 
-						file="symbol-defs.svg" 
-						symbol="icon-caller"
-						/>
-					<cms:svg 
-						file="symbol-defs.svg" 
-						symbol="icon-time"
-						/>
-				</span>
 
 				<!-- Call to action button footer -->
 				<p class="btn-label"><cms:text constant="call_to_action" /></p>
