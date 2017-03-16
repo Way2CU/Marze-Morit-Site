@@ -1,0 +1,13 @@
+<document>
+	<div class="list-item">
+
+		<img
+			src="gallery::getImageById(null, $params['text_id'])"
+			alt="$params['title'][$language]"
+			cms:eval="src,alt"
+			/>
+
+		<!-- Description -->
+		<div><cms:markdown param="description" multilanguage="yes"/></div>
+	</div>
+</document>

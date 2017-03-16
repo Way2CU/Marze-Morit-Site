@@ -95,6 +95,15 @@
 					action="show"
 					text_id="gallery"
 					/>
+					
+				<div class="image-list">
+					<cms:module 
+						name="gallery"
+						action="show_image_list"
+						group="gallery"
+						template="parts/gallery_list.xml"
+						/>
+				</div>
 			</div>
 			<footer>
 
