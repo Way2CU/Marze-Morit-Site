@@ -269,6 +269,7 @@ body > div.programs > article > ul > li:not(:last-child) {
 */
 
 body > div.offer-section {
+	position: relative;
 	padding: 0 calc(~'(100% - 1200px) / 2');
 	height: 500px;
 
@@ -278,11 +279,10 @@ body > div.offer-section {
 }
 
 body > div.offer-section article {
-	width: 40%;
-	padding-right: 10%;
+	width: 50%;
 }
 
-body > div.offer-section article > h2 {
+body > div.offer-section article > h1 {
 	color: @color_off_black;
 }
 
@@ -292,20 +292,20 @@ body > div.offer-section article > hr {
 	border: 0px;
 }
 
-body > div.offer-section article > ol {
+body > div.offer-section article > ul {
 	list-style: none;
 	counter-reset: li;
 	padding-right: 0px;
 }
 
-body > div.offer-section article > ol > li {
+body > div.offer-section article > ul > li {
 	counter-increment: li;
-	width: 40%;
+	width: 49%;
 	display: inline-block;
-	padding: 15px 0px 15px 15px;
+	padding: 15px 0px 15px 0px;
 }
 
-body > div.offer-section article > ol > li:before {
+body > div.offer-section article > ul > li:before {
 	content: counter(li) ".";
 	color: @color_red;
   	display: inline-block; 
@@ -313,11 +313,10 @@ body > div.offer-section article > ol > li:before {
 }
 
 body > div.offer-section > a.call-to-action {
-	position: relative;
+	position: absolute;
 	display: inline-block;
-	top: -230px;
-	right: calc(~'(100% - 300px)');
-	margin-right: 40px;
+	top: 60px;
+	left: 240px;
 	padding: 5px 60px;
 	background-color: @color_red;
 	text-decoration: none;
@@ -349,11 +348,9 @@ body > div.offer-section > a.call-to-action > svg {
 
 body > div.offer-section > p.btn-label {
 	position: absolute;
-	display: block;
-	top: 750px;
-	right: calc(~'(100% - 300px)');
-	margin-top: 40px;
-	padding-right: 50px;	
+	display: inline-block;
+	top: 15px;
+	left: 250px;
 	color: @color_off_black;
 }
 
