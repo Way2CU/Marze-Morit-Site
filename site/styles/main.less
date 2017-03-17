@@ -270,7 +270,6 @@ body > div.programs > article > ul > li:not(:last-child) {
 
 body > div.offer-section {
 	position: relative;
-	padding: 0 calc(~'(100% - 1200px) / 2');
 	height: 500px;
 
 	background-image: url(../images/table.jpg);
@@ -280,6 +279,7 @@ body > div.offer-section {
 
 body > div.offer-section article {
 	width: 50%;
+	padding-right: calc(~'(50% - 500px) / 2');
 }
 
 body > div.offer-section article > h1 {
@@ -381,6 +381,7 @@ body > div.gallery > article > hr {
 
 body > div.gallery > div.image-list {
 	padding: 0px calc(~'(50% - 500px) / 2');	
+	margin-top: 25px;
 }
 
 body > div.gallery > div.image-list > div.list-item {
@@ -409,6 +410,7 @@ body > div.gallery > div.image-list > div.list-item > img {
 */
 
 footer {
+	position: relative;
 	min-height: 600px;
 	color: @color_background;
 
@@ -418,25 +420,23 @@ footer {
 }
 
 footer img.logo {
-	position: relative;
-	right: calc(~'(100% - 150px)/2');
+	position: absolute;
+	left: calc(~'(50% - 550px) / 2');
 	width: 150px;
 	display: inline-block;
 }
 
 footer img.stamp {
-	position: relative;
-	top: 60px;
-	right: 440px;
+	position: absolute;
+	top: 100px;
+	left: calc(~'(50% - 100px)');
 	width: 200px;
 	display: inline-block;
 }
 
 footer > article {
-	position: relative;
-	display: inline-block;
-	left: 235px;
-	top: -15px;
+	padding-right: calc(~'(50% - 500px) / 2');
+	width: 35%;
 }
 
 footer > article > ul {
@@ -481,31 +481,14 @@ footer > article > ul > li:nth-of-type(3):before {
     vertical-align: sub;
 }
 
-footer > span.icon-wrap {
-	display: inline-block;
-	position: relative;
-	left: 400px;
-	top: -2px;
-}
-
-footer > span.icon-wrap > svg {
-	width: 1.5em;
-	height: 1.5em;
-	display: block;
-	margin: 15px 0px 10px 10px;
-	position: relative;
-}
-
 footer > a.call-to-action {
-	position: relative;
 	display: inline-block;
 	padding: 5px 60px;
+	margin-right: calc(~'(50% - 500px) / 2');
 	background-color: @color_red;
 	text-decoration: none;
 	color: @color_background;
 	border-radius: 1em;
-	left: 665px;
-	top: 110px;
 
 	&:hover {
 		background-color: lighten(@color_red, 10);
@@ -531,17 +514,14 @@ footer > a.call-to-action p {
 }
 
 footer > p.btn-label {
-	display: inline-block;
-	position: relative;
-	left:435px;
-	top: 35px;
+	padding-right: calc(~'(50% - 500px) / 2');
 	color: @color_off_black;
+	font-weight: bold;
 }
 
 footer > div {
-	position: relative;
-	top:138px;
-	padding: 22px 0px;
+	padding: 22px 0px 5px 0px;
+	margin-top: 45px;
 	text-align: center;
 	background-color: fade(@color_off_black, 75);
 }
