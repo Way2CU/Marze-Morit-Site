@@ -1,0 +1,226 @@
+/**
+ * Main Style Sheet
+ * Marze Morit
+ *
+ * Copyright © 2017 Way2CU. All Rights Reserved.
+ * Author: Mladen Mijatov
+ */
+
+@import 'common.less';
+
+body {
+	background-color: white;
+	color: black;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+
+	color: @color_dark_blue;
+}
+
+h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+
+	color: @color_blue;
+}
+
+/**
+ * Header
+ */
+
+header {
+	position: relative;
+}
+
+header img.logo {
+	margin: 0px calc(~'(100% - 150px)/2');
+	width: 150px;
+}
+
+header img.stamp {
+	display: none;
+}
+
+/**
+* Header Article
+*/
+
+header article {
+	min-height: 800px;
+
+	background-image: url(../images/mobile-header-background-02.jpg);
+	background-position: center bottom;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+header > article > h1,
+header > article > h2 {
+	text-align: center;
+}
+
+header > article > h1:empty {
+	display: none;
+} 
+
+header > article > ul {
+	padding-bottom: 1em;
+	padding: 0px calc(~'(100% - 250px)/2');
+	margin-top: 2em;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+header > article > ul > li {
+	padding-bottom: 0.5em;
+}
+
+header > article > ul > li:nth-of-type(1):before {
+	display: inline-block;
+    width: 1.2em;
+    height: 1.5em;
+    margin: 10px 3px 0 10px;
+    content: "  ";
+    background: url(../images/svg-icons/apple.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
+}
+
+header > article > ul > li:nth-of-type(2):before {
+	display: inline-block;
+    width: 1.2em;
+    height: 1.5em;
+    margin: 10px 3px 0 10px;
+    content: "  ";
+    background: url(../images/svg-icons/caller.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
+}
+
+header > article > ul > li:nth-of-type(3):before {
+	display: inline-block;
+    width: 1.2em;
+    height: 1.5em;
+    margin: 10px 3px 0 10px;
+    content: "  ";
+    background: url(../images/svg-icons/time.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
+}
+
+header > a > svg {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+header > a > p {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+}
+
+header > a.call-to-action {
+	position: absolute;
+	top: 380px;
+	left: 35px;
+	display: inline-block;
+	padding: 3px 65px;
+	background-color: @color_red;
+	text-decoration: none;
+	color: @color_background;
+	text-align: center;
+	border-radius: 1em;
+
+	&:hover {
+		background-color: lighten(@color_red, 10);
+		cursor: pointer;
+	}
+
+	&:active {
+		background-color: darken(@color_red, 10);
+	}
+}
+
+header > p.btn-label {
+	position: absolute;
+	top: 340px;
+	left: 45px;
+	font-weight: bold;
+}
+
+/**
+ * Contact form
+ */
+
+header > div {
+	height: 460px;
+}
+
+header > div > h3,
+header > div > span {
+	padding: 1rem;
+	text-align: center;
+}
+
+header > div > h3 {
+	color: @color_off_black;
+}
+
+header > div > form {
+	padding: 0 1rem;
+}
+
+header > div > form label {
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
+
+header > div > form label span {
+	display: inline-block;
+	min-width: 55px;
+}
+
+header > div > form label input {
+	border: 1px solid @color_off_black;
+	box-sizing: border-box;
+	height: 50px;
+	width: 80%;
+	background-color: @color_background;
+
+	color: @color_off_black;
+
+	&:focus {
+		border-color: @color_red;
+	}
+}
+
+header > div > form div.controls {
+	text-align: center;
+	margin-top: 20px;
+}
+
+header > div > form div.controls button {
+	box-sizing: border-box;
+	height: 50px;
+	width: 135px;
+	border: 0;
+	background-color: @color_red;
+	color: white;
+
+	&:active {
+		background-color: darken(@color_red, 10);
+	}
+}
+
+header > div > span {
+	display: block;
+	margin-top: 1em;
+}
