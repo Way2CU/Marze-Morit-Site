@@ -114,6 +114,8 @@ header > a > svg {
 }
 
 header > a > p {
+	font-size: 1.3em;
+	font-weight: bold;
 	display: inline-block;
 	vertical-align: middle;
 	padding-left: 0.8em;
@@ -121,7 +123,7 @@ header > a > p {
 
 header > a.call-to-action {
 	margin-bottom: 125vw;
-	margin-right: 15vw;
+	margin-right: 10vw;
 	display: inline-block;
 	padding: 0em 3em;
 	background-color: @color_red;
@@ -141,7 +143,7 @@ header > a.call-to-action {
 }
 
 header > p.btn-label {
-	margin-right: 2.8em;
+	margin-right: 2.5em;
 	font-weight: bold;
 }
 
@@ -246,4 +248,319 @@ body > div.programs > article > ul > li:nth-of-type(odd) {
 	border-left: 1px solid @color_dark_blue;
 	margin-left: 0em;
 	padding-left: 1em;
+}
+
+/*
+* Offer section
+*/
+
+body > div.offer-section {
+	background-image: url(../images/mobile-table-2.jpg);
+	background-size: 100% auto;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+body > div.offer-section article {
+	padding: 0 2em;
+	margin-bottom: 10vw;
+}
+
+body > div.offer-section article > h1:empty {
+	display: none;
+}
+
+body > div.offer-section article > h1 {
+	color: @color_off_black;
+}
+
+body > div.offer-section article > h2 {
+	color: @color_off_black;
+}
+
+body > div.offer-section article > hr {
+	background-color: @color_red;
+	height: 1px;
+	border: 0;
+}
+
+body > div.offer-section article > ol {
+	list-style: none;
+	counter-reset: li;
+	padding-right: 0;
+	margin: 2em 0em;
+}
+
+body > div.offer-section article > ol > li {
+	counter-increment: li;
+	margin-bottom: 2em;
+}
+
+body > div.offer-section article > ol > li:before {
+	content: counter(li) ".";
+	color: @color_red;
+  	display: inline-block; 
+  	margin-left: 1em;
+}
+
+body > div.offer-section > a.call-to-action {
+	display: inline-block;
+	margin-bottom: 60vw;
+	margin-right: 10vw;
+	padding: 0em 3em;
+	background-color: @color_red;
+	text-decoration: none;
+	color: @color_background;
+	border-radius: 1em;
+
+	&:active {
+		background-color: darken(@color_red, 10);
+	}
+}
+
+body > div.offer-section > a.call-to-action > p {
+	font-size: 1.3em;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 0.8em;
+}
+
+body > div.offer-section > a.call-to-action > svg {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	vertical-align: middle;
+}
+
+body > div.offer-section > p.btn-label {
+	margin-right: 13vw;
+	font-weight: bold;
+	display: inline-block;
+	color: @color_off_black;
+}
+
+/*
+* Gallery
+*/
+
+body > div.gallery > article {
+	padding: 0px 2em;
+}
+
+body > div.gallery > article > h2,
+body > div.gallery > article > h3 {
+	text-align: center;
+	color: @color_off_black;
+}
+
+body > div.gallery > article > hr {
+	background-color: @color_red;
+	height: 1px;
+	border: 0px;
+	margin-top: 2em;
+}
+
+body > div.gallery > div.image-list {
+	padding: 0px 2em;	
+	margin-top: 2em;
+}
+
+body > div.gallery > div.image-list > div.list-item {
+	margin-bottom: 2em;
+	display: inline-block;
+	width: 100%;
+}
+
+body > div.gallery > div.image-list > div.list-item > div {
+	display: inline-block;
+	width: 60%;
+	margin-bottom: 1em;
+}
+
+body > div.gallery > div.image-list > div.list-item > div > p {
+	display: inline-block;
+	margin: 0;
+	padding-bottom: 0.4em;
+	color: @color_off_black;
+}
+
+body > div.gallery > div.image-list > div.list-item > img {
+	vertical-align: bottom;
+}
+
+/*
+*	Footer
+*/
+
+footer {
+	color: @color_background;
+
+	background-image: url(../images/mobile-footer-1.jpg);
+	background-size: 100% auto;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+footer img.logo {
+	margin: 0 calc(~'(100% - 20vw)/2');
+	width: 20vw;
+	display: inline-block;
+}
+
+footer img.stamp {
+	display: inline-block;
+	width: 60vw;
+	margin: 0 calc(~'(100% - 60vw)/2');
+	padding-bottom: 50vw;
+}
+
+footer > article {
+	padding: 0 2em;
+}
+
+footer > article > h1,
+footer > article > h3 {
+	text-align: center;
+}
+
+footer > article > ul {
+	color: @color_off_black;
+	padding-right: 0;
+	padding-bottom: 1em;
+	list-style-type: none;
+	list-style-image: none;
+	line-height: 3em;
+}
+
+footer > article > ul > li:nth-of-type(1):before {
+	display: inline-block;
+    width: 1.2em;
+    height: 1.5em;
+    margin: 0.8em 0.2em 0 0.8em;
+    content: "  ";
+    background: url(../images/svg-icons/apple.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
+}
+
+footer > article > ul > li:nth-of-type(2):before {
+	display: inline-block;
+    width: 1.2em;
+    height: 1.5em;
+    margin: 0.8em 0.2em 0 0.8em;
+    content: "  ";
+    background: url(../images/svg-icons/caller.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
+}
+
+footer > article > ul > li:nth-of-type(3):before {
+	display: inline-block;
+    width: 1.2em;
+    height: 1.5em;
+    margin: 0.8em 0.2em 0 0.8em;
+    content: "  ";
+    background: url(../images/svg-icons/time.svg) no-repeat 0 0;
+    background-size: 100%;
+    vertical-align: sub;
+}
+
+footer > a.call-to-action {
+	margin-right: 10vw;
+	margin-bottom: 3em;
+	display: inline-block;
+	padding: 0em 3em;
+	background-color: @color_red;
+	text-decoration: none;
+	color: @color_background;
+	text-align: center;
+	border-radius: 1em;
+
+	&:active {
+		background-color: darken(@color_red, 10);
+	}
+}
+
+footer > a.call-to-action svg {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	vertical-align: middle;
+}
+
+footer > a.call-to-action p {
+	font-weight: bold;
+	font-size: 1.3em;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 0.8em;
+}
+
+footer > p.btn-label {
+	margin-right: 13vw;
+	color: @color_off_black;
+	font-weight: bold;
+}
+
+body > div.form-footer-mobile {
+	text-align: center;
+	background-color: black;
+}
+
+body > div.form-footer-mobile > form {
+}
+
+body > div.form-footer-mobile > h3 {
+	display: inline-block;
+	color: @color_background;
+	padding-bottom: 1.2em;
+}
+
+body > div.form-footer-mobile > span {
+	display: inline-block;
+	padding-top: 1.2em;
+	color: @color_background;
+}
+
+body > div.form-footer-mobile > form > label {
+	width: 100%;
+	display: block;
+	margin-bottom: 0.8em;
+}
+
+body > div.form-footer-mobile > form > label > span {
+	padding-left: 0.3em;
+	color: @color_background;
+}
+
+body > div.form-footer-mobile > form > label > input {
+	border: 1px solid @color_off_black;
+	box-sizing: border-box;
+	height: 3.2em;
+	width: 78%;
+	background-color: @color_background;
+
+	color: @color_off_black;
+
+	&:focus {
+		border-color: @color_red;
+	}
+}
+
+body > div.form-footer-mobile > form > div.controls {
+	text-align: center;
+	margin-top: 1.3em;
+}
+
+body > div.form-footer-mobile > form > div.controls button {
+	box-sizing: border-box;
+	padding: 1em 4em;
+	border: 0;
+	background-color: @color_red;
+	color: white;
+
+	&:active {
+		background-color: darken(@color_red, 10);
+	}
 }
