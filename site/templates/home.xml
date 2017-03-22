@@ -8,8 +8,8 @@
 		</head>
 
 		<body>
-			<header>
-				<!-- Company logo -->
+			<cms:mobile>
+				<!-- Company logo mobile-->
 				<img
 					class="logo"
 					src="_BASEURL.'/site/images/logo-wide.svg'"
@@ -17,7 +17,18 @@
 					cms:eval="src"
 					cms:constant="alt"
 					/>
-
+			</cms:mobile>
+			<header>
+				<!-- Company logo desktop-->
+				<cms:desktop>
+					<img
+						class="logo"
+						src="_BASEURL.'/site/images/logo-wide.svg'"
+						alt="site_title"
+						cms:eval="src"
+						cms:constant="alt"
+						/>
+				</cms:desktop>
 				<!-- Initial text and list, list bullets icons -->
 
 				<cms:module
@@ -48,7 +59,20 @@
 					/>
 
 				<!-- Contact form -->
-				<div>
+				<cms:desktop>
+					<div>
+						<h3><cms:text constant="title_contact_form"/></h3>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact"
+							/>
+						<span><cms:text constant="message_contact_form"/></span>
+					</div>
+				</cms:desktop>
+			</header>
+			<cms:mobile>
+				<div class="form-mobile">
 					<h3><cms:text constant="title_contact_form"/></h3>
 					<cms:module
 						name="contact_form"
@@ -57,8 +81,7 @@
 						/>
 					<span><cms:text constant="message_contact_form"/></span>
 				</div>
-			</header>
-
+			</cms:mobile>
 			<!-- List of company-programs -->
 			<div class="programs">
 				<cms:module 

@@ -34,15 +34,18 @@ h2, h3, h4, h5 {
  */
 
 header {
-	position: relative;
+	background-image: url(../images/mobile-header-background-02.jpg);
+	background-position: center bottom;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 
-header img.logo {
-	margin: 0px calc(~'(100% - 150px)/2');
-	width: 150px;
+body > img.logo {
+	margin: 0em 25vw;
+	width: 45vw;
 }
 
-header img.stamp {
+header > img.stamp {
 	display: none;
 }
 
@@ -50,28 +53,18 @@ header img.stamp {
 * Header Article
 */
 
-header article {
-	min-height: 800px;
-
-	background-image: url(../images/mobile-header-background-02.jpg);
-	background-position: center bottom;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-}
-
 header > article > h1,
 header > article > h2 {
 	text-align: center;
 }
 
-header > article > h1:empty {
+header > article > h1 {
 	display: none;
 } 
 
 header > article > ul {
 	padding-bottom: 1em;
-	padding: 0px calc(~'(100% - 250px)/2');
-	margin-top: 2em;
+	padding: 0em 2em;
 	list-style-type: none;
 	list-style-image: none;
 }
@@ -84,7 +77,7 @@ header > article > ul > li:nth-of-type(1):before {
 	display: inline-block;
     width: 1.2em;
     height: 1.5em;
-    margin: 10px 3px 0 10px;
+    margin: 0.8em 0.2em 0 0.8em;
     content: "  ";
     background: url(../images/svg-icons/apple.svg) no-repeat 0 0;
     background-size: 100%;
@@ -95,7 +88,7 @@ header > article > ul > li:nth-of-type(2):before {
 	display: inline-block;
     width: 1.2em;
     height: 1.5em;
-    margin: 10px 3px 0 10px;
+    margin: 0.8em 0.2em 0 0.8em;
     content: "  ";
     background: url(../images/svg-icons/caller.svg) no-repeat 0 0;
     background-size: 100%;
@@ -106,7 +99,7 @@ header > article > ul > li:nth-of-type(3):before {
 	display: inline-block;
     width: 1.2em;
     height: 1.5em;
-    margin: 10px 3px 0 10px;
+    margin: 0.8em 0.2em 0 0.8em;
     content: "  ";
     background: url(../images/svg-icons/time.svg) no-repeat 0 0;
     background-size: 100%;
@@ -115,23 +108,22 @@ header > article > ul > li:nth-of-type(3):before {
 
 header > a > svg {
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 2em;
+	height: 2em;
 	vertical-align: middle;
 }
 
 header > a > p {
 	display: inline-block;
 	vertical-align: middle;
-	padding-left: 10px;
+	padding-left: 0.8em;
 }
 
 header > a.call-to-action {
-	position: absolute;
-	top: 380px;
-	left: 35px;
+	margin-bottom: 125vw;
+	margin-right: 15vw;
 	display: inline-block;
-	padding: 3px 65px;
+	padding: 0em 3em;
 	background-color: @color_red;
 	text-decoration: none;
 	color: @color_background;
@@ -149,9 +141,7 @@ header > a.call-to-action {
 }
 
 header > p.btn-label {
-	position: absolute;
-	top: 340px;
-	left: 45px;
+	margin-right: 2.8em;
 	font-weight: bold;
 }
 
@@ -159,40 +149,36 @@ header > p.btn-label {
  * Contact form
  */
 
-header > div {
-	height: 460px;
-}
-
-header > div > h3,
-header > div > span {
+body > div.form-mobile > h3,
+body > div.form-mobile > span {
 	padding: 1rem;
 	text-align: center;
 }
 
-header > div > h3 {
+body > div.form-mobile > h3 {
 	color: @color_off_black;
 }
 
-header > div > form {
+body > div.form-mobile > form {
 	padding: 0 1rem;
 }
 
-header > div > form label {
+body > div.form-mobile > form label {
 	width: 100%;
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 0.8em;
 }
 
-header > div > form label span {
+body > div.form-mobile > form label span {
 	display: inline-block;
-	min-width: 55px;
+	min-width: 3em;
 }
 
-header > div > form label input {
+body > div.form-mobile > form label input {
 	border: 1px solid @color_off_black;
 	box-sizing: border-box;
-	height: 50px;
-	width: 80%;
+	height: 3.2em;
+	width: 82%;
 	background-color: @color_background;
 
 	color: @color_off_black;
@@ -202,15 +188,14 @@ header > div > form label input {
 	}
 }
 
-header > div > form div.controls {
+body > div.form-mobile > form div.controls {
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 1.3em;
 }
 
-header > div > form div.controls button {
+body > div.form-mobile > form div.controls button {
 	box-sizing: border-box;
-	height: 50px;
-	width: 135px;
+	padding: 1em 4em;
 	border: 0;
 	background-color: @color_red;
 	color: white;
@@ -220,7 +205,7 @@ header > div > form div.controls button {
 	}
 }
 
-header > div > span {
+body > div.form-mobile > span {
 	display: block;
 	margin-top: 1em;
 }
@@ -230,13 +215,13 @@ header > div > span {
 */
 
 body > div.programs > article {
-	margin-top: 10px;
+	margin-top: 0.8em;
 	text-align: center;
 } 
 
 body > div.programs > article > h2 {
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 1em;
 	color: @color_off_black;
 }
 
@@ -245,7 +230,7 @@ body > div.programs > article > h1:empty {
 }
 
 body > div.programs > article > ul {
-	padding: 0px 0px;
+	padding: 0em 0em;
 	list-style-type: none;
 	list-style-image: none;
 }
@@ -259,6 +244,6 @@ body > div.programs > article > ul > li {
 
 body > div.programs > article > ul > li:nth-of-type(odd) {
 	border-left: 1px solid @color_dark_blue;
-	margin-left: 0px;
-	padding-left: 15px;
+	margin-left: 0em;
+	padding-left: 1em;
 }
