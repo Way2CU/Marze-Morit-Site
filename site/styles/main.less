@@ -7,6 +7,7 @@
  */
 
 @import 'common.less';
+@import 'stock/copyright.css';
 
 body {
 	background-color: white;
@@ -551,18 +552,18 @@ footer > p.btn-label {
 	font-weight: bold;
 }
 
-footer > div {
+footer > div.form-footer-desktop {
 	padding: 30px 0px 8px 0px;
 	margin-top: 55px;
 	text-align: center;
 	background-color: fade(@color_off_black, 75);
 }
 
-footer > div > form {
+footer > div.form-footer-desktop > form {
 	padding-right: 20px;
 }
 
-footer > div > h3 {
+footer > div.form-footer-desktop > h3 {
 	font-size: 1.8em;
 	display: inline-block;
 	color: @color_background;
@@ -570,21 +571,21 @@ footer > div > h3 {
 	padding-right: 20px;
 }
 
-footer > div > span {
+footer > div.form-footer-desktop > span {
 	display: inline-block;
 	padding-top: 20px;
 	padding-right: 20px;
 }
 
-footer > div > form > label {
+footer > div.form-footer-desktop > form > label {
 	display: inline-block;
 }
 
-footer > div > form > label > span {
+footer > div.form-footer-desktop > form > label > span {
 	padding-left: 5px;
 }
 
-footer > div > form > label > input {
+footer > div.form-footer-desktop> form > label > input {
 	height: 35px;
 	margin-left: 10px;
 	width: 240px;
@@ -599,11 +600,11 @@ footer > div > form > label > input {
 	}
 }
 
-footer > div > form > div.controls {
+footer > div.form-footer-desktop > form > div.controls {
 	display: inline-block;
 }
 
-footer > div > form > div.controls button {
+footer > div.form-footer-desktop > form > div.controls button {
 	padding: 0.8em 3em;
 	margin-right: 10px;
 
@@ -621,5 +622,11 @@ footer > div > form > div.controls button {
 	&:active {
 		background-color: darken(@color_red, 10);
 	}
+}
+
+footer div.copyright {
+	background-color: fade(@color_off_black, 75);
+	text-align: center;
+	background-position: 42%;
 }
 
