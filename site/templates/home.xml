@@ -36,15 +36,15 @@
 					action="show"
 					text_id="header"
 					/>
-				
+
 				<!-- Call to action button -->
 				<p class="btn-label"><cms:text constant="call_to_action" /></p>
 				<a href="tel:..." class="call-to-action">
-					
+
 					<p><cms:text constant="phone"/></p>
 
-					<cms:svg 
-						file="symbol-defs.svg" 
+					<cms:svg
+						file="symbol-defs.svg"
 						symbol="icon-phone-white"
 						/>
 				</a>
@@ -52,7 +52,7 @@
 				<!-- Circle -->
 				<img
 					class="stamp"
-					src="_BASEURL.'/site/images/svg-icons/stamp.svg'"
+					src="_BASEURL.'/site/images/stamp.svg'"
 					alt="site_title"
 					cms:eval="src"
 					cms:constant="alt"
@@ -87,7 +87,7 @@
 
 			<!-- List of company-programs -->
 			<div class="programs">
-				<cms:module 
+				<cms:module
 					name="articles"
 					action="show"
 					text_id="programs"
@@ -96,20 +96,20 @@
 
 			<!-- Offer section -->
 			<div class="offer-section">
-				
-				<cms:module 
+
+				<cms:module
 					name="articles"
 					action="show"
 					text_id="offer"
 					/>
-				
+
 				<p class="btn-label"><cms:text constant="call_to_action" /></p>
 				<a href="tel:..." class="call-to-action">
-					
+
 					<p><cms:text constant="phone"/></p>
 
-					<cms:svg 
-						file="symbol-defs.svg" 
+					<cms:svg
+						file="symbol-defs.svg"
 						symbol="icon-phone-white"
 						/>
 				</a>
@@ -125,7 +125,7 @@
 					/>
 
 				<div class="image-list">
-					<cms:module 
+					<cms:module
 						name="gallery"
 						action="show_image_list"
 						group="gallery"
@@ -148,7 +148,7 @@
 				<cms:desktop>
 					<img
 						class="stamp"
-						src="_BASEURL.'/site/images/svg-icons/stamp.svg'"
+						src="_BASEURL.'/site/images/stamp.svg'"
 						alt="site_title"
 						cms:eval="src"
 						cms:constant="alt"
@@ -164,11 +164,11 @@
 				<!-- Call to action button footer -->
 				<p class="btn-label"><cms:text constant="call_to_action" /></p>
 				<a href="tel:..." class="call-to-action">
-					
+
 					<p><cms:text constant="phone"/></p>
 
-					<cms:svg 
-						file="symbol-defs.svg" 
+					<cms:svg
+						file="symbol-defs.svg"
 						symbol="icon-phone-white"
 						/>
 				</a>
@@ -177,7 +177,7 @@
 				<cms:mobile>
 					<img
 						class="stamp"
-						src="_BASEURL.'/site/images/svg-icons/stamp.svg'"
+						src="_BASEURL.'/site/images/stamp.svg'"
 						alt="site_title"
 						cms:eval="src"
 						cms:constant="alt"
